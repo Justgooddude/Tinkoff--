@@ -13,6 +13,7 @@ public class Bot {
 
     private final TelegramBot telegramBot;
     public static final Map<Long, List<String>> USERS_LINKS = new HashMap<>();
+
     public Bot(ApplicationConfig config) {
         telegramBot = new TelegramBot(config.telegramToken());
     }

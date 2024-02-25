@@ -4,12 +4,14 @@ import com.pengrad.telegrambot.model.Update;
 import static edu.java.bot.Bot.USERS_LINKS;
 
 public class List extends AbsCommand {
-    public List(AbsCommand command){
+    public List(AbsCommand command) {
         super(command);
     }
+
     @Override
     public String execute(Update update) {
-        if (update.message().text().equals("/list)")) {
+        var check = update.message().text();
+        if (update.message().text().equals("/list")) {
             if (USERS_LINKS.get(update.message().from().id()).isEmpty()) {
                 return "You not tracking anithing";
             }

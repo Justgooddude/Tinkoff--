@@ -10,7 +10,7 @@ public class BotComMenu {
 
     public static void setMenuCommands(TelegramBot bot) {
 
-        BotCommand[] commands = new BotCommand[]{
+        BotCommand[] commands = new BotCommand[] {
             new BotCommand("start", "Start the bot"),
             new BotCommand("track", "Add new site for tracking"),
             new BotCommand("untrack", "Stop site tracking"),
