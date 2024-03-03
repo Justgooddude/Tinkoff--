@@ -1,4 +1,4 @@
-package edu.java.scrapper;
+package edu.java;
 
 import edu.java.scrapper.configuration.ApplicationConfig;
 import org.springframework.boot.SpringApplication;
